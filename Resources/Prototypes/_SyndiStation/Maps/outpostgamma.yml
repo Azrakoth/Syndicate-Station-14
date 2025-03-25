@@ -1,0 +1,36 @@
+- type: gameMap
+  id: Outpostgamma
+  mapName: 'Outpost Gamma'
+  mapPath: /Maps/_SyndiStation/outpostgamma.yml
+  minPlayers: 0
+  maxPlayers: 60
+  stations:
+    Outpostgamma:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Outpost Gamma {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'SYNDI'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
+        - type: StationJobs
+          availableJobs:
+            Captain: [ 1, 1 ]
+            HeadOfSecurity: [ 1, 1 ]
+            SecurityOfficer: [ 1, 10 ]
+            CargoTechnician: [ 1, 10 ]
+            SalvageSpecialist: [ 1, 10 ]
+            Bartender: [ 1, 10 ]
+            Botanist: [ 1, 10 ]
+            Chef: [ 1, 10 ]
+            MedicalDoctor: [ 1, 10 ]
+            Chemist: [ 1, 10 ]
+            Janitor: [ 1, 10 ]
+            Musician: [ 1, 10 ]
+            AtmosphericTechnician: [ 1, 10 ]
+            StationEngineer: [ 1, 10 ]
+            Scientist: [ 1, 10 ]
+            Passenger: [ 1, 10 ]
+

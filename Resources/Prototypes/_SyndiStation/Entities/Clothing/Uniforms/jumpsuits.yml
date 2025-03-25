@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformInsurrectionist
+  name: insurrectionist jumpsuit
+  description: A uniform worn by a more radical cell within the Syndicate faction.
+  components:
+  - type: Sprite
+    sprite: _Syndistation/Clothing/Uniforms/Jumpsuit/insurrectionist_uniform.rsi
+  - type: Clothing
+    sprite: _Syndistation/Clothing/Uniforms/Jumpsuit/insurrectionist_uniform.rsi

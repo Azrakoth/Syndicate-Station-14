@@ -1,0 +1,44 @@
+- type: entity
+  parent: ClothingHeadLightBase
+  id: ClothingHeadHelmetFreeCorps
+  name: free corps helmet
+  description: Helmet worn by the Third Free Corps, a vicious mercenary group that often works for the Syndicate.
+  components:
+  - type: Sprite
+    sprite: _Syndistation/Clothing/Head/Helmets/free_corps_helmet.rsi
+  - type: Clothing
+    sprite: _Syndistation/Clothing/Head/Helmets/free_corps_helmet.rsi
+    quickEquip: true
+  - type: IngestionBlocker
+  - type: TemperatureProtection
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.2
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+  - type: FireProtection
+    reduction: 0.2
+  - type: PressureProtection
+    highPressureMultiplier: 0.25
+    lowPressureMultiplier: 1000
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - FireHelmet
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+  - type: BreathMask
+  - type: PointLight
+    color: orange
+    radius: 5
+    energy: 2

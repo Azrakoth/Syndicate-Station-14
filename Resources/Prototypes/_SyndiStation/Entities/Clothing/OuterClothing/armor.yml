@@ -1,0 +1,19 @@
+- type: entity
+  parent: ClothingOuterArmorBase
+  id: ClothingOuterArmorFreeCorps
+  name: free corps body armor
+  description: A ballistic vest with a built-in respirator port, often used by the Third Free Corps; a vicious, Syndicate mercenary group.
+  components:
+  - type: Sprite
+    sprite: _Syndistation/Clothing/OuterClothing/Armor/freecorpsbodyarmor.rsi
+  - type: Clothing
+    sprite: _Syndistation/Clothing/OuterClothing/Armor/freecorpsbodyarmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.4
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.80

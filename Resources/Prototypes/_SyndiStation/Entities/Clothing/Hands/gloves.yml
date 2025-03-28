@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesFreeCorps
+  name: free corps gloves
+  description: The iron fists of the Third Free Corps
+  components:
+  - type: Sprite
+    sprite: _Syndistation/Clothing/Hands/Gloves/free_corps_gloves.rsi
+  - type: Clothing
+    sprite: _Syndistation/Clothing/Hands/Gloves/free_corps_gloves.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative

@@ -8,3 +8,14 @@
     sprite: _Syndistation/Clothing/Uniforms/Jumpsuit/insurrectionist_uniform.rsi
   - type: Clothing
     sprite: _Syndistation/Clothing/Uniforms/Jumpsuit/insurrectionist_uniform.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformFreeCorps
+  name: free corps uniform
+  description: The standard uniform worn by members of the Third Free Corps Unit- a vicious mercenary group often employed by the Syndicate.
+  components:
+  - type: Sprite
+    sprite: _Syndistation/Clothing/Uniforms/Jumpsuit/free_corps_uniform.rsi
+  - type: Clothing
+    sprite: _Syndistation/Clothing/Uniforms/Jumpsuit/free_corps_uniform.rsi

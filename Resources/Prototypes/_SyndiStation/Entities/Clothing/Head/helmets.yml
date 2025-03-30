@@ -37,6 +37,7 @@
     - Snout
     - HeadTop
     - HeadSide
+    - FacialHair
   - type: BreathMask
   - type: PointLight
     color: orange

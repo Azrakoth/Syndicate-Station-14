@@ -1,8 +1,8 @@
 - type: entity
   parent: [ClothingOuterStorageBaseExtended, AllowSuitStorageClothing, ClothingOuterArmorBase]
   id: ClothingOuterArmorFreeCorps
-  name: free corps body armor
-  description: A ballistic vest with a built-in respirator port, often used by the Third Free Corps; a vicious, Syndicate mercenary group.
+  name: BTVR-Mk.II
+  description: A ballistic vest with a built-in respirator port, used by the Third Free Corps; a vicious, Syndicate mercenary group.
   components:
   - type: Sprite
     sprite: _Syndistation/Clothing/OuterClothing/Armor/freecorpsbodyarmor.rsi
@@ -17,3 +17,4 @@
         Heat: 0.5
   - type: ExplosionResistance
     damageCoefficient: 0.80
+

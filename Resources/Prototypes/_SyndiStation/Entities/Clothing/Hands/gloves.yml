@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingHandsBase
   id: ClothingHandsGlovesFreeCorps
-  name: free corps gloves
+  name: GP-Mk.V
   description: The iron fists of the Third Free Corps
   components:
   - type: Sprite

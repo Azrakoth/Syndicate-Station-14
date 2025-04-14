@@ -1,8 +1,8 @@
 - type: entity
-  parent: ClothingHeadLightBase
+  parent: ClothingHeadLightBaseNoBattery
   id: ClothingHeadHelmetFreeCorps
-  name: free corps helmet
-  description: Helmet worn by the Third Free Corps, a vicious mercenary group that often works for the Syndicate.
+  name: IBH-Mk.III
+  description: Helmet worn by the Third Free Corps, a vicious, Syndicate-aligned mercenary group
   components:
   - type: Sprite
     sprite: _Syndistation/Clothing/Head/Helmets/free_corps_helmet.rsi

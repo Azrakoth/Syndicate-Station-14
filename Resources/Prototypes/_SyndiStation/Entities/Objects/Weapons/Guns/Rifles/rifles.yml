@@ -1,0 +1,102 @@
+- type: entity
+  name: BaseWeaponRifleM93
+  parent: [BaseItem, BaseGunWieldable]
+  id: BaseWeaponRifleM93
+  description: A rooty tooty point and shooty.
+  abstract: true
+  components:
+  - type: Sprite
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Syndistation/Objects/Weapons/Guns/Rifles/m93.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 4
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineM93Rifle
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineM93Rifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: StaticPrice
+    price: 1000
+
+
+- type: entity
+  name: M-93 Rifle
+  parent: [BaseWeaponRifleM93, BaseSecurityContraband]
+  id: WeaponRifleFreeCorpsM93
+  description: Air-cooled, gas operated and chambered for the .30 rifle cartridge. The standard issued armament of the Third Free Corps.
+  components:
+  - type: Sprite
+    sprite: _Syndistation/Objects/Weapons/Guns/Rifles/m93.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 8
+    soundGunshot:
+      path:  /Audio/_Syndistation/Weapons/Guns/Gunshots/m93shot.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Syndistation/Weapons/Guns/Cock/m93_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineM93Rifle
+        insertSound: /Audio/_Syndistation/Weapons/Guns/MagIn/m93_magin.ogg
+        ejectSound: /Audio/_Syndistation/Weapons/Guns/MagOut/m93_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineM93Rifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
